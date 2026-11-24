@@ -66,7 +66,6 @@
       const matches = extractFindings(); activeFindings = matches;
       if (!matches.length) {
         $('findingList').innerHTML = '<div class="clean-result"><span>✓</span><h3>No risky terms found in this sample.</h3><p>We didn’t spot any of the warning patterns covered by this demo.</p></div>';
-        $('report-meta').textContent = 'REVIEW COMPLETE';
       } else {
         renderFindings($('languageSelect').value);
       }
